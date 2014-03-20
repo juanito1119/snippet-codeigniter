@@ -1,0 +1,18 @@
+<snippet>
+	<content><![CDATA[
+public function ${1:this}(\$id)
+{
+	\$this->db->where('id', \$id);
+	\$query = $this->db->get(\$this->_table);
+	if(\$query){
+		return \$query->result();
+	}else{
+		return false;
+	}
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>cgetid</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

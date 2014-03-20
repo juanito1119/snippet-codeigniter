@@ -1,0 +1,23 @@
+<snippet>
+	<content><![CDATA[
+<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+
+class ${1:this} extends MY_Model {
+
+	function __construct()
+	{
+		parent::__construct();
+		\$this->set_table('${2:this}'');
+	}
+
+			
+}
+
+/* End of file ${3:this}.php */
+/* Location: ./application/models/${3:this}.php */
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>cnewmodel</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

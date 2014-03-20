@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[
+\$data = array(
+	'${1:indice}'=>\$this->input->post('${2:post}'),
+);
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>cdataarray</tabTrigger> 
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

@@ -1,0 +1,17 @@
+<snippet>
+	<content><![CDATA[
+public function  ${1:this}(\$id)
+{
+	\$this->db->where('id', \$id);
+	if(\$this->db->delete(\$this->_table)){
+		return true;
+	}else{
+		return false;
+	}
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>cdelete</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

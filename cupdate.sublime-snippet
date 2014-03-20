@@ -1,0 +1,17 @@
+<snippet>
+	<content><![CDATA[
+public function ${1:this}(\$data,\$id)
+{
+	\$this->db->where('id', \$id);	
+	if (\$this->db->update(\$this->_table, \$data)) {
+		return true;
+	}else{
+		return false;
+	}
+}	
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>cupdate</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

@@ -1,0 +1,16 @@
+<snippet>
+	<content><![CDATA[
+public function index()
+{
+	\$data['title'] = '${1:this}';
+	\$this->load_header(\$data);
+	\$this->load->view('${2:vista}',\$data);
+	\$this->load_footer();
+}
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>cnewview</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>
